@@ -24,7 +24,7 @@ If you'd like to apply the patches yourself, go the bottom of this page.
 
 Install them the usual way.  First make CC aware of the marketplace:
 1. Run `claude`
-2. `/plugin marketplace add Piebald-AI/claude-code-lsps`
+2. `/plugin marketplace add qrius/claude-code-lsps`
 
 Then enable the plugins of your choice:
 1. Run `claude`

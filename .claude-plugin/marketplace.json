@@ -1,13 +1,13 @@
 {
   "name": "claude-code-lsps",
   "owner": {
-    "name": "Piebald LLC",
-    "email": "support@piebald.ai"
+    "name": "QRIUS",
+    "email": "support@qrius.global"
   },
   "plugins": [
     {
       "name": "vtsls",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": "./vtsls",
       "description": "TypeScript and JavaScript language server integration (using vtsls)",
       "category": "development",
@@ -19,13 +19,13 @@
         "vtsls"
       ],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "QRIUS",
+        "email": "support@qrius.global"
       }
     },
     {
       "name": "rust-analyzer",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": "./rust-analyzer",
       "description": "Rust language server integration with rust-analyzer",
       "category": "development",
@@ -34,13 +34,13 @@
         "lsp"
       ],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "QRIUS",
+        "email": "support@qrius.global"
       }
     },
     {
       "name": "pyright",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": "./pyright",
       "description": "Python language server with excellent type checking",
       "category": "development",
@@ -51,13 +51,13 @@
         "type-checking"
       ],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "QRIUS",
+        "email": "support@qrius.global"
       }
     },
     {
       "name": "gopls",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": "./gopls",
       "description": "Official Go language server",
       "category": "development",
@@ -68,13 +68,13 @@
         "language-server"
       ],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "QRIUS",
+        "email": "support@qrius.global"
       }
     },
     {
       "name": "jdtls",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": "./jdtls",
       "description": "Eclipse JDT Language Server for Java",
       "category": "development",
@@ -85,13 +85,13 @@
         "eclipse"
       ],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "QRIUS",
+        "email": "support@qrius.global"
       }
     },
     {
       "name": "clangd",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": "./clangd",
       "description": "LLVM-based language server for C and C++",
       "category": "development",
@@ -105,13 +105,13 @@
         "clang"
       ],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "QRIUS",
+        "email": "support@qrius.global"
       }
     },
     {
       "name": "ruby-lsp",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": "./ruby-lsp",
       "description": "Modern Ruby language server by Shopify",
       "category": "development",
@@ -121,13 +121,13 @@
         "language-server"
       ],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "QRIUS",
+        "email": "support@qrius.global"
       }
     },
     {
       "name": "vscode-langservers",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": "./vscode-langservers",
       "description": "HTML and CSS language servers from VS Code",
       "category": "development",
@@ -139,13 +139,13 @@
         "vscode"
       ],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "QRIUS",
+        "email": "support@qrius.global"
       }
     },
     {
       "name": "phpactor",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": "./phpactor",
       "description": "Intelligent PHP completion and refactoring language server",
       "category": "development",
@@ -155,13 +155,13 @@
         "language-server"
       ],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "QRIUS",
+        "email": "support@qrius.global"
       }
     },
     {
       "name": "omnisharp",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": "./omnisharp",
       "description": "Official .NET language server with rich C# support",
       "category": "development",
@@ -173,8 +173,8 @@
         "language-server"
       ],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "QRIUS",
+        "email": "support@qrius.global"
       }
     }
   ]

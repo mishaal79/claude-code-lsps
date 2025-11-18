@@ -1,10 +1,10 @@
 {
   "name": "gopls",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Official Go language server",
   "author": {
-    "name": "Piebald LLC",
-    "email": "support@piebald.ai"
+    "name": "QRIUS",
+    "email": "support@qrius.global"
   },
   "repository": "https://github.com/golang/tools/tree/master/gopls",
   "license": "BSD-3-Clause",

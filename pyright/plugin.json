@@ -1,10 +1,10 @@
 {
   "name": "pyright",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Python language server with excellent type checking",
   "author": {
-    "name": "Piebald LLC",
-    "email": "support@piebald.ai"
+    "name": "QRIUS",
+    "email": "support@qrius.global"
   },
   "repository": "https://github.com/microsoft/pyright",
   "license": "MIT",

@@ -1,10 +1,10 @@
 {
   "name": "omnisharp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Official .NET language server with rich C# support",
   "author": {
-    "name": "Piebald LLC",
-    "email": "support@piebald.ai"
+    "name": "QRIUS",
+    "email": "support@qrius.global"
   },
   "repository": "https://github.com/OmniSharp/omnisharp-roslyn",
   "license": "MIT",
