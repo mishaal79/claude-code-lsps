@@ -1,15 +1,11 @@
 {
-    "html": {
-        "command": "superhtml",
-        "args": ["lsp"],
-        "extensionToLanguage": {
-            ".html": "html",
-            ".htm": "html",
-            ".shtml": "html"
-        },
-        "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
-        "maxRestarts": 3
-    }
+  "html": {
+    "command": "superhtml",
+    "args": ["lsp"],
+    "languages": ["html"],
+    "fileExtensions": [".html", ".htm", ".shtml"],
+    "transport": "stdio",
+    "settings": {},
+    "maxRestarts": 3
+  }
 }

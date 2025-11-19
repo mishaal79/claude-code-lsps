@@ -73,11 +73,23 @@ while IFS= read -r -d '' file; do
     # Get the language ID key (first key in the object)
     LANG_ID=$(jq -r 'keys[0]' "$file")
 
-    if jq -e ".\"$LANG_ID\".command and .\"$LANG_ID\".args and .\"$LANG_ID\".extensionToLanguage and .\"$LANG_ID\".transport and .\"$LANG_ID\".maxRestarts" "$file" > /dev/null 2>&1; then
+    if jq -e ".\"$LANG_ID\".command and .\"$LANG_ID\".languages and .\"$LANG_ID\".fileExtensions and .\"$LANG_ID\".transport and .\"$LANG_ID\".maxRestarts" "$file" > /dev/null 2>&1; then
         COMMAND=$(jq -r ".\"$LANG_ID\".command" "$file")
-        echo -e "  ${GREEN}✓${NC} $file ($LANG_ID: $COMMAND)"
+        LANG_COUNT=$(jq -r ".\"$LANG_ID\".languages | length" "$file")
+        EXT_COUNT=$(jq -r ".\"$LANG_ID\".fileExtensions | length" "$file")
+        echo -e "  ${GREEN}✓${NC} $file ($LANG_ID: $COMMAND, $LANG_COUNT langs, $EXT_COUNT exts)"
+
+        # Check minimum array lengths
+        if [ "$LANG_COUNT" -lt 1 ]; then
+            echo -e "  ${RED}✗${NC} $file - languages array must have at least 1 item"
+            ERRORS=$((ERRORS + 1))
+        fi
+        if [ "$EXT_COUNT" -lt 1 ]; then
+            echo -e "  ${RED}✗${NC} $file - fileExtensions array must have at least 1 item"
+            ERRORS=$((ERRORS + 1))
+        fi
     else
-        echo -e "  ${RED}✗${NC} $file - Missing required fields"
+        echo -e "  ${RED}✗${NC} $file - Missing required fields (command, languages, fileExtensions, transport, maxRestarts)"
         ERRORS=$((ERRORS + 1))
     fi
 done < <(find . -name ".lsp.json" -not -path "./.git/*" -print0)

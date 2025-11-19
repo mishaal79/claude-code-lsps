@@ -1,13 +1,11 @@
 {
-    "astro": {
-        "command": "astro-ls",
-        "args": ["--stdio"],
-        "extensionToLanguage": {
-            ".astro": "astro"
-        },
-        "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
-        "maxRestarts": 3
-    }
+  "astro": {
+    "command": "astro-ls",
+    "args": ["--stdio"],
+    "languages": ["astro"],
+    "fileExtensions": [".astro"],
+    "transport": "stdio",
+    "settings": {},
+    "maxRestarts": 3
+  }
 }

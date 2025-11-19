@@ -1,20 +1,11 @@
 {
-    "php": {
-        "command": "phpactor",
-        "args": [
-            "language-server"
-        ],
-        "extensionToLanguage": {
-            ".php": "php",
-            ".phtml": "php",
-            ".php3": "php",
-            ".php4": "php",
-            ".php5": "php",
-            ".phps": "php"
-        },
-        "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
-        "maxRestarts": 3
-    }
+  "php": {
+    "command": "phpactor",
+    "args": ["language-server"],
+    "languages": ["php"],
+    "fileExtensions": [".php"],
+    "transport": "stdio",
+    "settings": {},
+    "maxRestarts": 3
+  }
 }

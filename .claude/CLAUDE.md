@@ -135,12 +135,16 @@ Each plugin directory contains TWO files:
 }
 ```
 
-**LSP Configuration Fields:**
-- `command` - Executable name (must be in PATH)
-- `args` - Command-line arguments
-- `extensionToLanguage` - Map file extensions to language IDs
-- `transport` - Communication method (always "stdio")
-- `maxRestarts` - Max automatic restarts on crash
+**LSP Configuration Fields (Official Schema):**
+- `command` - Executable name (must be in PATH or uvx for Python)
+- `args` - Command-line arguments array
+- `languages` - Array of language IDs (REQUIRED, min 1 item)
+- `fileExtensions` - Array of file extensions (REQUIRED, min 1 item)
+- `transport` - Communication method ("stdio" or "socket")
+- `settings` - LSP-specific settings object
+- `maxRestarts` - Max automatic restarts on crash (default: 3)
+
+See [LSP.md](LSP.md) for complete documentation.
 
 ## Repository Structure
 

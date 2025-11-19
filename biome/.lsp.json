@@ -1,21 +1,11 @@
 {
-    "biome": {
-        "command": "biome",
-        "args": ["lsp-proxy"],
-        "extensionToLanguage": {
-            ".js": "javascript",
-            ".jsx": "javascriptreact",
-            ".ts": "typescript",
-            ".tsx": "typescriptreact",
-            ".mjs": "javascript",
-            ".cjs": "javascript",
-            ".json": "json",
-            ".jsonc": "jsonc",
-            ".css": "css"
-        },
-        "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
-        "maxRestarts": 3
-    }
+  "biome": {
+    "command": "biome",
+    "args": ["lsp-proxy"],
+    "languages": ["javascript", "typescript", "javascriptreact", "typescriptreact", "json", "jsonc"],
+    "fileExtensions": [".js", ".jsx", ".mjs", ".cjs", ".ts", ".tsx", ".json", ".jsonc"],
+    "transport": "stdio",
+    "settings": {},
+    "maxRestarts": 3
+  }
 }

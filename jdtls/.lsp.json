@@ -1,13 +1,11 @@
 {
-    "java": {
-        "command": "jdtls",
-        "args": [],
-        "extensionToLanguage": {
-            ".java": "java"
-        },
-        "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
-        "maxRestarts": 3
-    }
+  "java": {
+    "command": "jdtls",
+    "args": [],
+    "languages": ["java"],
+    "fileExtensions": [".java"],
+    "transport": "stdio",
+    "settings": {},
+    "maxRestarts": 3
+  }
 }

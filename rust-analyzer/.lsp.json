@@ -1,13 +1,11 @@
 {
-    "rust": {
-        "command": "rust-analyzer",
-        "args": [],
-        "extensionToLanguage": {
-            ".rs": "rust"
-        },
-        "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
-        "maxRestarts": 3
-    }
+  "rust": {
+    "command": "rust-analyzer",
+    "args": [],
+    "languages": ["rust"],
+    "fileExtensions": [".rs"],
+    "transport": "stdio",
+    "settings": {},
+    "maxRestarts": 3
+  }
 }

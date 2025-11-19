@@ -1,15 +1,11 @@
 {
-    "python": {
-        "command": "pyrefly",
-        "args": ["lsp"],
-        "extensionToLanguage": {
-            ".py": "python",
-            ".pyi": "python",
-            ".pyw": "python"
-        },
-        "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
-        "maxRestarts": 3
-    }
+  "python": {
+    "command": "uvx",
+    "args": ["--from", "pyrefly", "pyrefly"],
+    "languages": ["python"],
+    "fileExtensions": [".py", ".pyi", ".pyw"],
+    "transport": "stdio",
+    "settings": {},
+    "maxRestarts": 3
+  }
 }

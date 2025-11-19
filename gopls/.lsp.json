@@ -1,13 +1,11 @@
 {
-    "go": {
-        "command": "gopls",
-        "args": [],
-        "extensionToLanguage": {
-            ".go": "go"
-        },
-        "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
-        "maxRestarts": 3
-    }
+  "go": {
+    "command": "gopls",
+    "args": [],
+    "languages": ["go"],
+    "fileExtensions": [".go"],
+    "transport": "stdio",
+    "settings": {},
+    "maxRestarts": 3
+  }
 }

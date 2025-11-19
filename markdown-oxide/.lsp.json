@@ -1,17 +1,11 @@
 {
-    "markdown": {
-        "command": "markdown-oxide",
-        "args": [],
-        "extensionToLanguage": {
-            ".md": "markdown",
-            ".markdown": "markdown",
-            ".mdown": "markdown",
-            ".mkdn": "markdown",
-            ".mkd": "markdown"
-        },
-        "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
-        "maxRestarts": 3
-    }
+  "markdown": {
+    "command": "markdown-oxide",
+    "args": [],
+    "languages": ["markdown"],
+    "fileExtensions": [".md", ".markdown", ".mdx"],
+    "transport": "stdio",
+    "settings": {},
+    "maxRestarts": 3
+  }
 }

@@ -1,16 +1,11 @@
 {
-    "terraform": {
-        "command": "terraform-ls",
-        "args": ["serve"],
-        "extensionToLanguage": {
-            ".tf": "terraform",
-            ".tfvars": "terraform-vars",
-            ".tfstack.hcl": "terraform-stack",
-            ".tfdeploy.hcl": "terraform-deploy"
-        },
-        "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
-        "maxRestarts": 3
-    }
+  "terraform": {
+    "command": "terraform-ls",
+    "args": ["serve"],
+    "languages": ["terraform", "hcl"],
+    "fileExtensions": [".tf", ".tfvars", ".hcl"],
+    "transport": "stdio",
+    "settings": {},
+    "maxRestarts": 3
+  }
 }

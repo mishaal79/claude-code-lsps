@@ -88,12 +88,9 @@ cd <lsp-name>
     "languageId": {
         "command": "lsp-executable-name",
         "args": ["--stdio"],
-        "extensionToLanguage": {
-            ".ext": "languageId",
-            ".ext2": "languageId"
-        },
+        "languages": ["languageId"],
+        "fileExtensions": [".ext", ".ext2"],
         "transport": "stdio",
-        "initializationOptions": {},
         "settings": {},
         "maxRestarts": 3
     }
@@ -103,13 +100,15 @@ cd <lsp-name>
 **Field Explanations:**
 
 - **languageId**: LSP language identifier (e.g., "python", "javascript", "html")
-- **command**: Executable command in PATH
-- **args**: Command-line arguments (usually `["--stdio"]` or `["lsp"]`)
-- **extensionToLanguage**: Map file extensions to language IDs
-- **transport**: Always "stdio" for now
-- **initializationOptions**: LSP-specific init options (usually empty)
-- **settings**: LSP-specific settings (usually empty)
-- **maxRestarts**: Max restart attempts (always 3)
+- **command**: Executable command in PATH (use `uvx` for Python LSPs)
+- **args**: Command-line arguments array (usually `["--stdio"]` or `["lsp"]`)
+- **languages**: Array of language IDs (REQUIRED, min 1 item)
+- **fileExtensions**: Array of file extensions (REQUIRED, min 1 item)
+- **transport**: "stdio" or "socket" (use "stdio")
+- **settings**: LSP-specific settings object
+- **maxRestarts**: Max restart attempts (default: 3)
+
+**Python LSPs**: Use `uvx --from <package> <command>` for per-project .venv isolation
 
 ### Step 5: Update README.md
 

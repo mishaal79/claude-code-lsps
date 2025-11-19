@@ -42,6 +42,17 @@ Here's a screenshot:
 <img width="603" height="374" alt="image" src="https://github.com/user-attachments/assets/207ebb79-8c45-446b-9c08-eb81d235c301" />
 
 
+## Python LSP Setup (UV-Based)
+
+All Python LSPs use **uvx** for per-project .venv isolation:
+
+```bash
+# Install UV (required for Python LSPs)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Python LSPs automatically detect your project's `.venv` - no global installation conflicts!
+
 ## Validation
 
 Before committing changes, validate JSON files:

@@ -1,18 +1,11 @@
 {
-    "javascript": {
-        "command": "npx",
-        "args": ["-y", "--package=oxlint", "-c", "oxc_language_server"],
-        "extensionToLanguage": {
-            ".js": "javascript",
-            ".jsx": "javascriptreact",
-            ".ts": "typescript",
-            ".tsx": "typescriptreact",
-            ".mjs": "javascript",
-            ".cjs": "javascript"
-        },
-        "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
-        "maxRestarts": 3
-    }
+  "javascript": {
+    "command": "npx",
+    "args": ["--yes", "oxc_language_server"],
+    "languages": ["javascript", "typescript", "javascriptreact", "typescriptreact"],
+    "fileExtensions": [".js", ".jsx", ".mjs", ".cjs", ".ts", ".tsx"],
+    "transport": "stdio",
+    "settings": {},
+    "maxRestarts": 3
+  }
 }

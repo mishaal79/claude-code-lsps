@@ -1,13 +1,11 @@
 {
-    "toml": {
-        "command": "taplo",
-        "args": ["lsp", "stdio"],
-        "extensionToLanguage": {
-            ".toml": "toml"
-        },
-        "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
-        "maxRestarts": 3
-    }
+  "toml": {
+    "command": "taplo",
+    "args": ["lsp", "stdio"],
+    "languages": ["toml"],
+    "fileExtensions": [".toml"],
+    "transport": "stdio",
+    "settings": {},
+    "maxRestarts": 3
+  }
 }

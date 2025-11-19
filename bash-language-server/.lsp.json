@@ -1,15 +1,11 @@
 {
-    "bash": {
-        "command": "bash-language-server",
-        "args": ["start"],
-        "extensionToLanguage": {
-            ".sh": "shellscript",
-            ".bash": "shellscript",
-            ".zsh": "shellscript"
-        },
-        "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
-        "maxRestarts": 3
-    }
+  "bash": {
+    "command": "bash-language-server",
+    "args": ["start"],
+    "languages": ["sh", "bash"],
+    "fileExtensions": [".sh", ".bash", ".zsh"],
+    "transport": "stdio",
+    "settings": {},
+    "maxRestarts": 3
+  }
 }
