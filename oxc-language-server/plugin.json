@@ -1,0 +1,12 @@
+{
+  "name": "oxc-language-server",
+  "version": "0.1.0",
+  "description": "Oxc Language Server - Ultra-fast Rust-based linting for JavaScript and TypeScript",
+  "author": {
+    "name": "Piebald LLC",
+    "email": "support@piebald.ai"
+  },
+  "repository": "https://github.com/oxc-project/oxc",
+  "license": "MIT",
+  "keywords": ["oxc", "oxlint", "javascript", "typescript", "lsp", "language-server", "rust", "linter"]
+}

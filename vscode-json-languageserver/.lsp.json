@@ -1,0 +1,14 @@
+{
+    "json": {
+        "command": "vscode-json-language-server",
+        "args": ["--stdio"],
+        "extensionToLanguage": {
+            ".json": "json",
+            ".jsonc": "jsonc"
+        },
+        "transport": "stdio",
+        "initializationOptions": {},
+        "settings": {},
+        "maxRestarts": 3
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "taplo",
+  "version": "0.1.0",
+  "description": "TOML language server (using taplo)",
+  "author": {
+    "name": "Piebald LLC",
+    "email": "support@piebald.ai"
+  },
+  "repository": "https://github.com/tamasfe/taplo",
+  "license": "MIT",
+  "keywords": ["toml", "lsp", "language-server", "taplo", "configuration"]
+}

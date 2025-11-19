@@ -1,0 +1,18 @@
+{
+    "javascript": {
+        "command": "npx",
+        "args": ["-y", "--package=oxlint", "-c", "oxc_language_server"],
+        "extensionToLanguage": {
+            ".js": "javascript",
+            ".jsx": "javascriptreact",
+            ".ts": "typescript",
+            ".tsx": "typescriptreact",
+            ".mjs": "javascript",
+            ".cjs": "javascript"
+        },
+        "transport": "stdio",
+        "initializationOptions": {},
+        "settings": {},
+        "maxRestarts": 3
+    }
+}

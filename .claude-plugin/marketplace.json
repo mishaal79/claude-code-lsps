@@ -176,6 +176,164 @@
         "name": "Piebald LLC",
         "email": "support@piebald.ai"
       }
+    },
+    {
+      "name": "basedpyright",
+      "version": "0.1.0",
+      "source": "./basedpyright",
+      "description": "Enhanced Python type checker and language server - a fork of pyright with additional features",
+      "category": "development",
+      "tags": [
+        "python",
+        "lsp",
+        "language-server",
+        "type-checking",
+        "basedpyright"
+      ],
+      "author": {
+        "name": "Piebald LLC",
+        "email": "support@piebald.ai"
+      }
+    },
+    {
+      "name": "ty",
+      "version": "0.1.0",
+      "source": "./ty",
+      "description": "Extremely fast Python type checker and language server by Astral, written in Rust",
+      "category": "development",
+      "tags": [
+        "python",
+        "lsp",
+        "language-server",
+        "type-checking",
+        "rust"
+      ],
+      "author": {
+        "name": "Piebald LLC",
+        "email": "support@piebald.ai"
+      }
+    },
+    {
+      "name": "oxc-language-server",
+      "version": "0.1.0",
+      "source": "./oxc-language-server",
+      "description": "Oxc Language Server - Ultra-fast Rust-based linting for JavaScript and TypeScript",
+      "category": "development",
+      "tags": [
+        "javascript",
+        "typescript",
+        "lsp",
+        "language-server",
+        "oxc",
+        "rust"
+      ],
+      "author": {
+        "name": "Piebald LLC",
+        "email": "support@piebald.ai"
+      }
+    },
+    {
+      "name": "bash-language-server",
+      "version": "0.1.0",
+      "source": "./bash-language-server",
+      "description": "Language Server Protocol support for Bash shell scripts",
+      "category": "development",
+      "tags": [
+        "bash",
+        "shell",
+        "lsp",
+        "language-server"
+      ],
+      "author": {
+        "name": "Piebald LLC",
+        "email": "support@piebald.ai"
+      }
+    },
+    {
+      "name": "terraform-ls",
+      "version": "0.1.0",
+      "source": "./terraform-ls",
+      "description": "Terraform and HCL language server integration (using terraform-ls)",
+      "category": "development",
+      "tags": [
+        "terraform",
+        "hcl",
+        "lsp",
+        "language-server",
+        "hashicorp"
+      ],
+      "author": {
+        "name": "Piebald LLC",
+        "email": "support@piebald.ai"
+      }
+    },
+    {
+      "name": "marksman",
+      "version": "0.1.0",
+      "source": "./marksman",
+      "description": "Language server for Markdown with wiki-linking, references, and smart navigation",
+      "category": "development",
+      "tags": [
+        "markdown",
+        "lsp",
+        "language-server",
+        "documentation"
+      ],
+      "author": {
+        "name": "Piebald LLC",
+        "email": "support@piebald.ai"
+      }
+    },
+    {
+      "name": "yaml-language-server",
+      "version": "0.1.0",
+      "source": "./yaml-language-server",
+      "description": "YAML Language Server providing IntelliSense, validation, document outlining, and more for YAML files",
+      "category": "development",
+      "tags": [
+        "yaml",
+        "lsp",
+        "language-server",
+        "kubernetes"
+      ],
+      "author": {
+        "name": "Piebald LLC",
+        "email": "support@piebald.ai"
+      }
+    },
+    {
+      "name": "taplo",
+      "version": "0.1.0",
+      "source": "./taplo",
+      "description": "TOML language server (using taplo)",
+      "category": "development",
+      "tags": [
+        "toml",
+        "lsp",
+        "language-server",
+        "configuration"
+      ],
+      "author": {
+        "name": "Piebald LLC",
+        "email": "support@piebald.ai"
+      }
+    },
+    {
+      "name": "vscode-json-languageserver",
+      "version": "0.1.0",
+      "source": "./vscode-json-languageserver",
+      "description": "VSCode JSON Language Server - provides IntelliSense, validation, formatting, and schema support for JSON files",
+      "category": "development",
+      "tags": [
+        "json",
+        "lsp",
+        "language-server",
+        "vscode"
+      ],
+      "author": {
+        "name": "Piebald LLC",
+        "email": "support@piebald.ai"
+      }
     }
   ]
 }

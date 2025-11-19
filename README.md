@@ -208,3 +208,156 @@ bun install -g vscode-langservers-extracted
 This provides `vscode-html-language-server` and `vscode-css-language-server` executables.
 
 </details>
+
+<details>
+<summary>Python - basedpyright (<code>basedpyright</code>)</summary>
+
+Install **basedpyright** - an enhanced fork of pyright with additional features:
+```bash
+# Using pip
+pip install basedpyright
+
+# Using pipx (recommended for global CLI tools)
+pipx install basedpyright
+
+# Using uv
+uv tool install basedpyright
+```
+
+The `basedpyright-langserver` executable needs to be in your PATH.
+
+</details>
+
+<details>
+<summary>Python - ty (<code>ty</code>)</summary>
+
+Install **ty** - extremely fast Python type checker by Astral (creators of Ruff):
+```bash
+# Using uv (recommended)
+uv tool install ty
+
+# Using pip
+pip install ty
+```
+
+The `ty` executable needs to be in your PATH.
+
+</details>
+
+<details>
+<summary>JavaScript/TypeScript - oxc (<code>oxc-language-server</code>)</summary>
+
+Install **oxlint** package which includes the oxc language server:
+```bash
+# npm
+npm install -g oxlint
+
+# Or use npx without installation
+npx --yes oxlint
+```
+
+The plugin uses `npx` to run `oxc_language_server` from the oxlint package automatically.
+
+</details>
+
+<details>
+<summary>Bash/Shell (<code>bash-language-server</code>)</summary>
+
+Install **bash-language-server** for shell script support:
+```bash
+# npm
+npm install -g bash-language-server
+
+# pnpm
+pnpm install -g bash-language-server
+
+# bun
+bun add -g bash-language-server
+```
+
+Supports `.sh`, `.bash`, and `.zsh` files.
+
+</details>
+
+<details>
+<summary>Terraform (<code>terraform-ls</code>)</summary>
+
+Install **terraform-ls** - official HashiCorp Terraform language server:
+```bash
+# macOS/Linux (Homebrew)
+brew install hashicorp/tap/terraform-ls
+
+# Or download binary from releases
+# https://releases.hashicorp.com/terraform-ls/
+```
+
+The `terraform-ls` executable needs to be in your PATH.
+
+</details>
+
+<details>
+<summary>Markdown (<code>marksman</code>)</summary>
+
+Install **marksman** - language server for Markdown with wiki-linking:
+```bash
+# macOS/Linux (Homebrew)
+brew install marksman
+
+# Or download binary from releases
+# https://github.com/artempyanykh/marksman/releases
+```
+
+Supports `.md`, `.markdown`, and `.mdx` files.
+
+</details>
+
+<details>
+<summary>YAML (<code>yaml-language-server</code>)</summary>
+
+Install **yaml-language-server** for YAML file support:
+```bash
+# npm
+npm install -g yaml-language-server
+
+# pnpm
+pnpm install -g yaml-language-server
+
+# bun
+bun add -g yaml-language-server
+```
+
+Provides validation, auto-completion, and schema support for YAML files.
+
+</details>
+
+<details>
+<summary>TOML (<code>taplo</code>)</summary>
+
+Install **taplo** - TOML language server:
+```bash
+# Using cargo (requires --features lsp flag)
+cargo install --features lsp --locked taplo-cli
+```
+
+The `taplo` executable needs to be in your PATH.
+
+</details>
+
+<details>
+<summary>JSON (<code>vscode-json-languageserver</code>)</summary>
+
+Install **vscode-langservers-extracted** which includes the JSON language server:
+```bash
+# npm
+npm install -g vscode-langservers-extracted
+
+# pnpm
+pnpm install -g vscode-langservers-extracted
+
+# bun
+bun add -g vscode-langservers-extracted
+```
+
+Provides IntelliSense, validation, and schema support for JSON and JSONC files.
+
+</details>

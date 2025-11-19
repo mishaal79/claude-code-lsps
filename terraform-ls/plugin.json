@@ -1,0 +1,12 @@
+{
+  "name": "terraform-ls",
+  "version": "0.1.0",
+  "description": "Terraform and HCL language server integration (using terraform-ls)",
+  "author": {
+    "name": "Piebald LLC",
+    "email": "support@piebald.ai"
+  },
+  "repository": "https://github.com/hashicorp/terraform-ls",
+  "license": "MPL-2.0",
+  "keywords": ["terraform", "hcl", "lsp", "language-server", "terraform-ls", "hashicorp", "infrastructure-as-code"]
+}

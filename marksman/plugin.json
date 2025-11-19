@@ -1,0 +1,12 @@
+{
+  "name": "marksman",
+  "version": "0.1.0",
+  "description": "Language server for Markdown with wiki-linking, references, and smart navigation",
+  "author": {
+    "name": "Piebald LLC",
+    "email": "support@piebald.ai"
+  },
+  "repository": "https://github.com/artempyanykh/marksman",
+  "license": "MIT",
+  "keywords": ["markdown", "lsp", "language-server", "wiki-links", "references", "documentation"]
+}

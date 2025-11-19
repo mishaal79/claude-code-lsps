@@ -1,0 +1,15 @@
+{
+    "markdown": {
+        "command": "marksman",
+        "args": ["server"],
+        "extensionToLanguage": {
+            ".md": "markdown",
+            ".markdown": "markdown",
+            ".mdx": "markdown"
+        },
+        "transport": "stdio",
+        "initializationOptions": {},
+        "settings": {},
+        "maxRestarts": 3
+    }
+}

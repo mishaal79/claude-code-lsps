@@ -1,0 +1,12 @@
+{
+  "name": "bash-language-server",
+  "version": "0.1.0",
+  "description": "Language Server Protocol support for Bash shell scripts",
+  "author": {
+    "name": "Piebald LLC",
+    "email": "support@piebald.ai"
+  },
+  "repository": "https://github.com/bash-lsp/bash-language-server",
+  "license": "MIT",
+  "keywords": ["bash", "shell", "sh", "zsh", "language-server", "lsp"]
+}

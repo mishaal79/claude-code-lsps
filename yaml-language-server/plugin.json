@@ -1,0 +1,12 @@
+{
+  "name": "yaml-language-server",
+  "version": "0.1.0",
+  "description": "YAML Language Server providing IntelliSense, validation, document outlining, and more for YAML files",
+  "author": {
+    "name": "Piebald LLC",
+    "email": "support@piebald.ai"
+  },
+  "repository": "https://github.com/redhat-developer/yaml-language-server",
+  "license": "MIT",
+  "keywords": ["yaml", "yml", "lsp", "language-server", "kubernetes", "configuration"]
+}

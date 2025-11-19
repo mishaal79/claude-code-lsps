@@ -1,0 +1,12 @@
+{
+  "name": "vscode-json-languageserver",
+  "version": "0.1.0",
+  "description": "VSCode JSON Language Server - provides IntelliSense, validation, formatting, and schema support for JSON and JSONC files",
+  "author": {
+    "name": "Piebald LLC",
+    "email": "support@piebald.ai"
+  },
+  "repository": "https://github.com/hrsh7th/vscode-langservers-extracted",
+  "license": "MIT",
+  "keywords": ["json", "jsonc", "lsp", "language-server", "vscode", "schema", "validation"]
+}
