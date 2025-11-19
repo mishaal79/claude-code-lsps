@@ -64,13 +64,6 @@ The `rust-analyzer` executable needs to be in your PATH.
 
 Install **vtsls** and `typescript` packages globally:
 ```bash
-# npm
-npm install -g @vtsls/language-server typescript
-
-# pnpm
-pnpm install -g @vtsls/language-server typescript
-
-# bun
 bun install -g @vtsls/language-server typescript
 ```
 
@@ -124,13 +117,6 @@ The `basedpyright-langserver` executable needs to be in your PATH.
 
 Install **pyright** for its speed and excellent type checking:
 ```bash
-# npm
-npm install -g pyright
-
-# pnpm
-pnpm install -g pyright
-
-# bun
 bun install -g pyright
 ```
 
@@ -279,13 +265,6 @@ The `superhtml` executable needs to be in your PATH.
 
 Install **emmet-language-server** - modern HTML/CSS expansion with JSX/TSX support:
 ```bash
-# npm
-npm install -g emmet-language-server
-
-# pnpm
-pnpm install -g emmet-language-server
-
-# bun
 bun add -g emmet-language-server
 ```
 
@@ -300,13 +279,6 @@ The `emmet-language-server` executable needs to be in your PATH.
 
 Install **@astrojs/language-server** - official Astro language server:
 ```bash
-# npm (with TypeScript and Prettier)
-npm install -g typescript prettier prettier-plugin-astro @astrojs/language-server
-
-# pnpm
-pnpm install -g typescript prettier prettier-plugin-astro @astrojs/language-server
-
-# bun
 bun add -g typescript prettier prettier-plugin-astro @astrojs/language-server
 ```
 
@@ -321,13 +293,6 @@ The `astro-ls` executable needs to be in your PATH.
 
 Install **svelte-language-server** - official Svelte language server:
 ```bash
-# npm
-npm install -g svelte-language-server
-
-# pnpm
-pnpm install -g svelte-language-server
-
-# bun
 bun add -g svelte-language-server
 ```
 
@@ -342,17 +307,7 @@ The `svelteserver` executable needs to be in your PATH.
 
 Install **@tailwindcss/language-server** - official Tailwind IntelliSense:
 ```bash
-# npm
-npm install -g @tailwindcss/language-server
-
-# pnpm
-pnpm install -g @tailwindcss/language-server
-
-# bun
 bun add -g @tailwindcss/language-server
-
-# Or via Homebrew
-brew install tailwindcss-language-server
 ```
 
 **Features**: Class autocomplete, linting, and hover previews for Tailwind CSS. Works with HTML, JSX, TSX, Vue, Svelte, and Astro files. Requires `tailwind.config.js` in your workspace.
@@ -384,13 +339,6 @@ The plugin uses `npx` to run `oxc_language_server` from the oxlint package autom
 
 Install **bash-language-server** for shell script support:
 ```bash
-# npm
-npm install -g bash-language-server
-
-# pnpm
-pnpm install -g bash-language-server
-
-# bun
 bun add -g bash-language-server
 ```
 
@@ -439,13 +387,6 @@ Supports `.md`, `.markdown`, and `.mdx` files.
 
 Install **yaml-language-server** for YAML file support:
 ```bash
-# npm
-npm install -g yaml-language-server
-
-# pnpm
-pnpm install -g yaml-language-server
-
-# bun
 bun add -g yaml-language-server
 ```
 
@@ -473,13 +414,6 @@ The `taplo` executable needs to be in your PATH.
 
 Install **biome** - lightning-fast Rust-based unified toolchain:
 ```bash
-# npm
-npm install -g @biomejs/biome
-
-# pnpm
-pnpm install -g @biomejs/biome
-
-# bun
 bun add -g @biomejs/biome
 ```
 
