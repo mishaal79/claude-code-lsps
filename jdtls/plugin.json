@@ -4,7 +4,7 @@
   "description": "Eclipse JDT Language Server for Java",
   "author": {
     "name": "Mishal",
-    "email": "mishal@example.com"
+    "email": "mishal@qrius.global"
   },
   "repository": "https://github.com/eclipse-jdtls/eclipse.jdt.ls",
   "license": "EPL-2.0",

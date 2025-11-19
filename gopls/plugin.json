@@ -4,7 +4,7 @@
   "description": "Official Go language server",
   "author": {
     "name": "Mishal",
-    "email": "mishal@example.com"
+    "email": "mishal@qrius.global"
   },
   "repository": "https://github.com/golang/tools/tree/master/gopls",
   "license": "BSD-3-Clause",

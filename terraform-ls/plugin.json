@@ -4,7 +4,7 @@
   "description": "Terraform and HCL language server integration (using terraform-ls)",
   "author": {
     "name": "Mishal",
-    "email": "mishal@example.com"
+    "email": "mishal@qrius.global"
   },
   "repository": "https://github.com/hashicorp/terraform-ls",
   "license": "MPL-2.0",

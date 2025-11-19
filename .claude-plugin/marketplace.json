@@ -1,180 +1,24 @@
 {
-  "name": "claude-code-lsps",
+  "name": "mish-cc-market",
   "owner": {
-    "name": "Piebald LLC",
-    "email": "support@piebald.ai"
+    "name": "Mishal",
+    "email": "mishal@qrius.global"
+  },
+  "metadata": {
+    "description": "Performance-optimized LSP servers for Claude Code with focus on Rust/Go implementations",
+    "version": "2.0.0"
   },
   "plugins": [
     {
-      "name": "vtsls",
+      "name": "python",
       "version": "0.1.0",
-      "source": "./vtsls",
-      "description": "TypeScript and JavaScript language server integration (using vtsls)",
+      "source": "./python",
+      "description": "Default Python LSP - ty by Astral, extremely fast Rust-based type checker (26x faster than pyright)",
       "category": "development",
-      "tags": [
-        "typescript",
-        "javascript",
-        "lsp",
-        "language-server",
-        "vtsls"
-      ],
+      "tags": ["python", "lsp", "language-server", "type-checking", "rust", "astral", "ty", "default"],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
-      }
-    },
-    {
-      "name": "rust-analyzer",
-      "version": "0.1.0",
-      "source": "./rust-analyzer",
-      "description": "Rust language server integration with rust-analyzer",
-      "category": "development",
-      "tags": [
-        "rust",
-        "lsp"
-      ],
-      "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
-      }
-    },
-    {
-      "name": "pyright",
-      "version": "0.1.0",
-      "source": "./pyright",
-      "description": "Python language server with excellent type checking",
-      "category": "development",
-      "tags": [
-        "python",
-        "lsp",
-        "language-server",
-        "type-checking"
-      ],
-      "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
-      }
-    },
-    {
-      "name": "gopls",
-      "version": "0.1.0",
-      "source": "./gopls",
-      "description": "Official Go language server",
-      "category": "development",
-      "tags": [
-        "go",
-        "golang",
-        "lsp",
-        "language-server"
-      ],
-      "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
-      }
-    },
-    {
-      "name": "jdtls",
-      "version": "0.1.0",
-      "source": "./jdtls",
-      "description": "Eclipse JDT Language Server for Java",
-      "category": "development",
-      "tags": [
-        "java",
-        "lsp",
-        "language-server",
-        "eclipse"
-      ],
-      "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
-      }
-    },
-    {
-      "name": "clangd",
-      "version": "0.1.0",
-      "source": "./clangd",
-      "description": "LLVM-based language server for C and C++",
-      "category": "development",
-      "tags": [
-        "c",
-        "cpp",
-        "c++",
-        "lsp",
-        "language-server",
-        "llvm",
-        "clang"
-      ],
-      "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
-      }
-    },
-    {
-      "name": "ruby-lsp",
-      "version": "0.1.0",
-      "source": "./ruby-lsp",
-      "description": "Modern Ruby language server by Shopify",
-      "category": "development",
-      "tags": [
-        "ruby",
-        "lsp",
-        "language-server"
-      ],
-      "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
-      }
-    },
-    {
-      "name": "vscode-langservers",
-      "version": "0.1.0",
-      "source": "./vscode-langservers",
-      "description": "HTML and CSS language servers from VS Code",
-      "category": "development",
-      "tags": [
-        "html",
-        "css",
-        "lsp",
-        "language-server",
-        "vscode"
-      ],
-      "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
-      }
-    },
-    {
-      "name": "phpactor",
-      "version": "0.1.0",
-      "source": "./phpactor",
-      "description": "Intelligent PHP completion and refactoring language server",
-      "category": "development",
-      "tags": [
-        "php",
-        "lsp",
-        "language-server"
-      ],
-      "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
-      }
-    },
-    {
-      "name": "omnisharp",
-      "version": "0.1.0",
-      "source": "./omnisharp",
-      "description": "Official .NET language server with rich C# support",
-      "category": "development",
-      "tags": [
-        "csharp",
-        "c#",
-        "dotnet",
-        "lsp",
-        "language-server"
-      ],
-      "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
       }
     },
     {
@@ -183,35 +27,214 @@
       "source": "./ty",
       "description": "Extremely fast Python type checker and language server by Astral, written in Rust",
       "category": "development",
-      "tags": [
-        "python",
-        "lsp",
-        "language-server",
-        "type-checking",
-        "rust"
-      ],
+      "tags": ["python", "lsp", "language-server", "type-checking", "rust", "astral", "ty"],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
+      }
+    },
+    {
+      "name": "python-pyright",
+      "version": "0.1.0",
+      "source": "./python-pyright",
+      "description": "Alternative Python LSP - pyright with excellent type checking",
+      "category": "development",
+      "tags": ["python", "lsp", "language-server", "type-checking", "pyright", "alternative"],
+      "author": {
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
+      }
+    },
+    {
+      "name": "basedpyright",
+      "version": "0.1.0",
+      "source": "./basedpyright",
+      "description": "Community fork of pyright with Pylance features (semantic highlighting, inlay hints)",
+      "category": "development",
+      "tags": ["python", "lsp", "language-server", "type-checking", "pylance", "basedpyright"],
+      "author": {
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
+      }
+    },
+    {
+      "name": "pyrefly",
+      "version": "0.1.0",
+      "source": "./pyrefly",
+      "description": "Meta's lightning-fast Rust-based Python type checker (1.85M LOC/sec)",
+      "category": "development",
+      "tags": ["python", "lsp", "language-server", "type-checking", "rust", "meta", "performance"],
+      "author": {
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
+      }
+    },
+    {
+      "name": "vtsls",
+      "version": "0.1.0",
+      "source": "./vtsls",
+      "description": "TypeScript/JavaScript LSP with full React, SolidJS, and JSX/TSX support",
+      "category": "development",
+      "tags": ["typescript", "javascript", "lsp", "language-server", "vtsls", "react", "solidjs", "jsx", "tsx"],
+      "author": {
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
+      }
+    },
+    {
+      "name": "rust-analyzer",
+      "version": "0.1.0",
+      "source": "./rust-analyzer",
+      "description": "Official Rust language server with comprehensive IDE features",
+      "category": "development",
+      "tags": ["rust", "lsp", "language-server"],
+      "author": {
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
+      }
+    },
+    {
+      "name": "gopls",
+      "version": "0.1.0",
+      "source": "./gopls",
+      "description": "Official Go language server",
+      "category": "development",
+      "tags": ["go", "golang", "lsp", "language-server"],
+      "author": {
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
+      }
+    },
+    {
+      "name": "superhtml",
+      "version": "0.1.0",
+      "source": "./superhtml",
+      "description": "First HTML LSP with full syntax error reporting, written in Zig",
+      "category": "development",
+      "tags": ["html", "lsp", "language-server", "validator", "formatter", "zig"],
+      "author": {
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
+      }
+    },
+    {
+      "name": "emmet-language-server",
+      "version": "0.1.0",
+      "source": "./emmet-language-server",
+      "description": "Emmet abbreviation expansion for HTML/CSS with JSX/TSX support",
+      "category": "development",
+      "tags": ["emmet", "html", "css", "lsp", "language-server", "jsx", "tsx", "expansion"],
+      "author": {
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
+      }
+    },
+    {
+      "name": "astro-language-server",
+      "version": "0.1.0",
+      "source": "./astro-language-server",
+      "description": "Official Astro language server with full IDE features for .astro files",
+      "category": "development",
+      "tags": ["astro", "lsp", "language-server", "jsx", "tsx"],
+      "author": {
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
+      }
+    },
+    {
+      "name": "svelte-language-server",
+      "version": "0.1.0",
+      "source": "./svelte-language-server",
+      "description": "Official Svelte language server with IDE features for .svelte files",
+      "category": "development",
+      "tags": ["svelte", "lsp", "language-server"],
+      "author": {
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
+      }
+    },
+    {
+      "name": "tailwindcss-language-server",
+      "version": "0.1.0",
+      "source": "./tailwindcss-language-server",
+      "description": "Official TailwindCSS IntelliSense with class autocomplete and linting",
+      "category": "development",
+      "tags": ["tailwind", "tailwindcss", "css", "lsp", "language-server", "intellisense"],
+      "author": {
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
+      }
+    },
+    {
+      "name": "jdtls",
+      "version": "0.1.0",
+      "source": "./jdtls",
+      "description": "Eclipse JDT Language Server for Java",
+      "category": "development",
+      "tags": ["java", "lsp", "language-server", "eclipse"],
+      "author": {
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
+      }
+    },
+    {
+      "name": "clangd",
+      "version": "0.1.0",
+      "source": "./clangd",
+      "description": "LLVM-based language server for C and C++",
+      "category": "development",
+      "tags": ["c", "cpp", "c++", "lsp", "language-server", "llvm", "clang"],
+      "author": {
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
+      }
+    },
+    {
+      "name": "ruby-lsp",
+      "version": "0.1.0",
+      "source": "./ruby-lsp",
+      "description": "Modern Ruby language server by Shopify",
+      "category": "development",
+      "tags": ["ruby", "lsp", "language-server"],
+      "author": {
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
+      }
+    },
+    {
+      "name": "phpactor",
+      "version": "0.1.0",
+      "source": "./phpactor",
+      "description": "Intelligent PHP completion and refactoring language server",
+      "category": "development",
+      "tags": ["php", "lsp", "language-server"],
+      "author": {
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
+      }
+    },
+    {
+      "name": "omnisharp",
+      "version": "0.1.0",
+      "source": "./omnisharp",
+      "description": "Official .NET language server with rich C# support",
+      "category": "development",
+      "tags": ["csharp", "c#", "dotnet", "lsp", "language-server"],
+      "author": {
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
       }
     },
     {
       "name": "oxc-language-server",
       "version": "0.1.0",
       "source": "./oxc-language-server",
-      "description": "Oxc Language Server - Ultra-fast Rust-based linting for JavaScript and TypeScript",
+      "description": "Ultra-fast Rust-based linting for JavaScript and TypeScript (50-100x faster than ESLint)",
       "category": "development",
-      "tags": [
-        "javascript",
-        "typescript",
-        "lsp",
-        "language-server",
-        "oxc",
-        "rust"
-      ],
+      "tags": ["javascript", "typescript", "lsp", "language-server", "oxc", "rust", "performance"],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
       }
     },
     {
@@ -220,102 +243,58 @@
       "source": "./bash-language-server",
       "description": "Language Server Protocol support for Bash shell scripts",
       "category": "development",
-      "tags": [
-        "bash",
-        "shell",
-        "lsp",
-        "language-server"
-      ],
+      "tags": ["bash", "shell", "lsp", "language-server"],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
       }
     },
     {
       "name": "terraform-ls",
       "version": "0.1.0",
       "source": "./terraform-ls",
-      "description": "Terraform and HCL language server integration (using terraform-ls)",
+      "description": "Official HashiCorp Terraform language server (Go-based, 99% memory reduction)",
       "category": "development",
-      "tags": [
-        "terraform",
-        "hcl",
-        "lsp",
-        "language-server",
-        "hashicorp"
-      ],
+      "tags": ["terraform", "hcl", "lsp", "language-server", "hashicorp", "go"],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
       }
     },
     {
       "name": "markdown-oxide",
       "version": "0.1.0",
       "source": "./markdown-oxide",
-      "description": "Blazing fast Rust-based PKM Markdown Language Server with backlinks and references",
+      "description": "Blazing fast Rust-based PKM Markdown language server with backlinks and references",
       "category": "development",
-      "tags": [
-        "markdown",
-        "lsp",
-        "language-server",
-        "rust",
-        "pkm"
-      ],
+      "tags": ["markdown", "lsp", "language-server", "rust", "pkm"],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
       }
     },
     {
       "name": "yaml-language-server",
       "version": "0.1.0",
       "source": "./yaml-language-server",
-      "description": "YAML Language Server providing IntelliSense, validation, document outlining, and more for YAML files",
+      "description": "YAML language server with IntelliSense, validation, and schema support",
       "category": "development",
-      "tags": [
-        "yaml",
-        "lsp",
-        "language-server",
-        "kubernetes"
-      ],
+      "tags": ["yaml", "lsp", "language-server", "kubernetes"],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
       }
     },
     {
       "name": "taplo",
       "version": "0.1.0",
       "source": "./taplo",
-      "description": "TOML language server (using taplo)",
+      "description": "Rust-based TOML language server with minimal memory usage",
       "category": "development",
-      "tags": [
-        "toml",
-        "lsp",
-        "language-server",
-        "configuration"
-      ],
+      "tags": ["toml", "lsp", "language-server", "configuration", "rust"],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
-      }
-    },
-    {
-      "name": "vscode-json-languageserver",
-      "version": "0.1.0",
-      "source": "./vscode-json-languageserver",
-      "description": "VSCode JSON Language Server - provides IntelliSense, validation, formatting, and schema support for JSON files",
-      "category": "development",
-      "tags": [
-        "json",
-        "lsp",
-        "language-server",
-        "vscode"
-      ],
-      "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
       }
     },
     {
@@ -324,20 +303,10 @@
       "source": "./biome",
       "description": "Lightning-fast Rust-based unified toolchain for JavaScript, TypeScript, JSON, and CSS",
       "category": "development",
-      "tags": [
-        "javascript",
-        "typescript",
-        "json",
-        "css",
-        "lsp",
-        "language-server",
-        "rust",
-        "formatter",
-        "linter"
-      ],
+      "tags": ["javascript", "typescript", "json", "css", "lsp", "language-server", "rust", "formatter", "linter"],
       "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
+        "name": "Mishal",
+        "email": "mishal@qrius.global"
       }
     }
   ]

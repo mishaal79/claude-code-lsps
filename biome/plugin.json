@@ -4,7 +4,7 @@
   "description": "Biome: Lightning-fast Rust-based unified toolchain for JavaScript, TypeScript, JSON, and CSS (formatter + linter + LSP)",
   "author": {
     "name": "Mishal",
-    "email": "mishal@example.com"
+    "email": "mishal@qrius.global"
   },
   "repository": "https://github.com/biomejs/biome",
   "license": "MIT",

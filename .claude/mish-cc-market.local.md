@@ -54,7 +54,7 @@ plugin-name/
   "description": "Description of the LSP server",
   "author": {
     "name": "Mishal",
-    "email": "mishal@example.com"
+    "email": "mishal@qrius.global"
   },
   "repository": "https://github.com/org/repo",
   "license": "MIT",

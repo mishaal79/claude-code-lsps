@@ -4,7 +4,7 @@
   "description": "YAML Language Server providing IntelliSense, validation, document outlining, and more for YAML files",
   "author": {
     "name": "Mishal",
-    "email": "mishal@example.com"
+    "email": "mishal@qrius.global"
   },
   "repository": "https://github.com/redhat-developer/yaml-language-server",
   "license": "MIT",

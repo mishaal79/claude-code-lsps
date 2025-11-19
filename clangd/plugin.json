@@ -4,7 +4,7 @@
   "description": "LLVM-based language server for C and C++",
   "author": {
     "name": "Mishal",
-    "email": "mishal@example.com"
+    "email": "mishal@qrius.global"
   },
   "repository": "https://github.com/clangd/clangd",
   "license": "Apache-2.0",

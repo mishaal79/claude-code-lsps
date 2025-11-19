@@ -66,7 +66,7 @@ cd <lsp-name>
   "description": "Brief description with key features",
   "author": {
     "name": "Mishal",
-    "email": "mishal@example.com"
+    "email": "mishal@qrius.global"
   },
   "repository": "https://github.com/org/lsp-repo",
   "license": "MIT",

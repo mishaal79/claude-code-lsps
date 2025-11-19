@@ -4,7 +4,7 @@
   "description": "Lightning-fast Python type checker and language server by Meta, written in Rust (1.85M LOC/sec)",
   "author": {
     "name": "Mishal",
-    "email": "mishal@example.com"
+    "email": "mishal@qrius.global"
   },
   "repository": "https://github.com/facebook/pyrefly",
   "license": "MIT",

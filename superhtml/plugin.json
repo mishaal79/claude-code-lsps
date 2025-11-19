@@ -4,7 +4,7 @@
   "description": "HTML Validator, Formatter, and LSP with full syntax error reporting, written in Zig",
   "author": {
     "name": "Mishal",
-    "email": "mishal@example.com"
+    "email": "mishal@qrius.global"
   },
   "repository": "https://github.com/kristoff-it/superhtml",
   "license": "MIT",

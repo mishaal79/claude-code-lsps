@@ -4,7 +4,7 @@
   "description": "Official .NET language server with rich C# support",
   "author": {
     "name": "Mishal",
-    "email": "mishal@example.com"
+    "email": "mishal@qrius.global"
   },
   "repository": "https://github.com/OmniSharp/omnisharp-roslyn",
   "license": "MIT",

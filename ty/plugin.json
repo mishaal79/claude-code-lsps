@@ -1,0 +1,12 @@
+{
+  "name": "ty",
+  "version": "0.1.0",
+  "description": "Extremely fast Python type checker and language server by Astral, written in Rust",
+  "author": {
+    "name": "Mishal",
+    "email": "mishal@qrius.global"
+  },
+  "repository": "https://github.com/astral-sh/ty",
+  "license": "MIT",
+  "keywords": ["python", "lsp", "language-server", "type-checking", "rust", "astral", "ty"]
+}
