@@ -1,0 +1,21 @@
+{
+    "emmet": {
+        "command": "emmet-language-server",
+        "args": ["--stdio"],
+        "extensionToLanguage": {
+            ".html": "html",
+            ".css": "css",
+            ".scss": "scss",
+            ".sass": "sass",
+            ".less": "less",
+            ".jsx": "javascriptreact",
+            ".tsx": "typescriptreact",
+            ".vue": "vue",
+            ".svelte": "svelte"
+        },
+        "transport": "stdio",
+        "initializationOptions": {},
+        "settings": {},
+        "maxRestarts": 3
+    }
+}

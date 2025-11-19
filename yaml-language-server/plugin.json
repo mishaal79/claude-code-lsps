@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "YAML Language Server providing IntelliSense, validation, document outlining, and more for YAML files",
   "author": {
-    "name": "Piebald LLC",
-    "email": "support@piebald.ai"
+    "name": "Mishal",
+    "email": "mishal@example.com"
   },
   "repository": "https://github.com/redhat-developer/yaml-language-server",
   "license": "MIT",

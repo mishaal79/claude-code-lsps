@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "Eclipse JDT Language Server for Java",
   "author": {
-    "name": "Piebald LLC",
-    "email": "support@piebald.ai"
+    "name": "Mishal",
+    "email": "mishal@example.com"
   },
   "repository": "https://github.com/eclipse-jdtls/eclipse.jdt.ls",
   "license": "EPL-2.0",

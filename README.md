@@ -1,6 +1,6 @@
-# Claude Code LSPs
+# mish-cc-market
 
-This repository contains a [Claude Code marketplace](https://code.claude.com/docs/en/plugin-marketplaces) with plugins that offer **performance-optimized LSP servers** for TypeScript, Rust, Python, Go, Java, C/C++, PHP, Ruby, C#, HTML/CSS, Shell, Terraform, Markdown, YAML, TOML, and JSON. [LSP servers](https://microsoft.github.io/language-server-protocol) provide powerful and familiar code intelligence features to IDEs, and now Claude Code directly.
+This repository contains a [Claude Code marketplace](https://code.claude.com/docs/en/plugin-marketplaces) with plugins that offer **performance-optimized LSP servers** for TypeScript, Rust, Python, Go, Java, C/C++, PHP, Ruby, C#, HTML, CSS, Astro, Svelte, TailwindCSS, Shell, Terraform, Markdown, YAML, TOML, and JSON. [LSP servers](https://microsoft.github.io/language-server-protocol) provide powerful and familiar code intelligence features to IDEs, and now Claude Code directly.
 
 **⚡ Performance Focus**: This marketplace prioritizes **Rust** and **Go** based LSP servers for maximum speed and minimal memory usage. Rust/Go implementations are typically 3-100x faster than TypeScript/Node.js alternatives.
 
@@ -26,14 +26,14 @@ If you'd like to apply the patches yourself, go the bottom of this page.
 
 Install them the usual way.  First make CC aware of the marketplace:
 1. Run `claude`
-2. `/plugin marketplace add Piebald-AI/claude-code-lsps`
+2. `/plugin marketplace add mish-cc-market`
 
 Then enable the plugins of your choice:
 1. Run `claude`
 2. Type `/plugins`
 3. Choose `Browse and install plugins`
-4. Enter the `Claude Code Language Servers` marketplace
-5. Select the plugins you'd like with the spacebar (e.g. TypeScript, Rust)
+4. Enter the `mish-cc-market` marketplace
+5. Select the plugins you'd like with the spacebar (e.g. TypeScript, Rust, Python)
 6. Press "i" to install them
 7. Restart Claude Code
 
@@ -73,12 +73,54 @@ pnpm install -g @vtsls/language-server typescript
 # bun
 bun install -g @vtsls/language-server typescript
 ```
+
+**Framework Support**: This LSP provides full support for:
+- **React** (including React 19) - JSX/TSX autocomplete, type checking, and IntelliSense
+- **SolidJS** - JSX/TSX with proper `jsxImportSource` handling
+- **Preact, Qwik, and other JSX frameworks** - Complete TypeScript/JSX integration
+
 Make sure the `vtsls` executable is in your PATH.
 
 </details>
 
 <details>
-<summary>Python (<code>pyright</code>)</summary>
+<summary>Python (<code>ty</code>) ⚡ RUST - DEFAULT</summary>
+
+Install **ty** - Astral's extremely fast Python type checker and language server:
+```bash
+# Using uv (recommended)
+uv tool install ty
+
+# Using pip
+pip install ty
+```
+
+**Performance**: 26x faster than pyright (0.5s vs 13.6s on 100k LOC). Written in Rust by Astral (creators of Ruff and uv) for optimal speed.
+
+**This is the default Python LSP** in this marketplace. The `ty` executable needs to be in your PATH.
+
+</details>
+
+<details>
+<summary>Python - basedpyright (<code>basedpyright</code>)</summary>
+
+Install **basedpyright** - community fork of pyright with Pylance features:
+```bash
+# Using pipx (recommended)
+pipx install basedpyright
+
+# Using pip
+pip install basedpyright
+```
+
+**Features**: Includes Pylance-exclusive features like semantic highlighting and inlay hints. Improved type checking with better handling of `Any` type and inherited attributes. Default language server in Zed editor.
+
+The `basedpyright-langserver` executable needs to be in your PATH.
+
+</details>
+
+<details>
+<summary>Python - pyright (<code>pyright</code>) - ALTERNATIVE</summary>
 
 Install **pyright** for its speed and excellent type checking:
 ```bash
@@ -91,6 +133,28 @@ pnpm install -g pyright
 # bun
 bun install -g pyright
 ```
+
+Alternative Python LSP option. The `pyright-langserver` executable needs to be in your PATH.
+
+</details>
+
+<details>
+<summary>Python - pyrefly (<code>pyrefly</code>) ⚡ RUST</summary>
+
+Install **pyrefly** - Meta's lightning-fast Python type checker and language server:
+```bash
+# Using cargo
+cargo install pyrefly
+
+# Or download pre-built binaries from releases
+# https://github.com/facebook/pyrefly/releases
+```
+
+**Performance**: Type checks 1.85 million lines of code per second. Written in Rust for optimal speed and IDE responsiveness. Designed from day one as both a type checker and language server.
+
+**Status**: Active alpha with weekly releases from Meta. Replaces the retired Pyre type checker.
+
+The `pyrefly` executable needs to be in your PATH.
 
 </details>
 
@@ -193,39 +257,107 @@ curl -L https://github.com/OmniSharp/omnisharp-roslyn/releases/latest/download/o
 </details>
 
 <details>
-<summary>HTML/CSS (<code>vscode-langservers</code>)</summary>
+<summary>HTML (<code>superhtml</code>) ⚡ ZIG</summary>
 
-Install **vscode-langservers-extracted** for both HTML and CSS:
+Install **superhtml** - first HTML LSP with full syntax error reporting:
 ```bash
-# npm
-npm install -g vscode-langservers-extracted
+# Download pre-built binary from releases
+# https://github.com/kristoff-it/superhtml/releases
 
-# pnpm
-pnpm install -g vscode-langservers-extracted
-
-# bun
-bun install -g vscode-langservers-extracted
+# Or build from source with Zig
+zig build -Doptimize=ReleaseSafe
 ```
 
-This provides `vscode-html-language-server` and `vscode-css-language-server` executables.
+**Features**: First-ever HTML Language Server that reports syntax errors. Validates element nesting, attribute values, and implements the full HTML5 spec. Includes formatter and templating support.
+
+The `superhtml` executable needs to be in your PATH.
 
 </details>
 
 <details>
-<summary>Python - ty (<code>ty</code>) ⚡ RUST</summary>
+<summary>Emmet (<code>emmet-language-server</code>)</summary>
 
-Install **ty** - extremely fast Python type checker by Astral (creators of Ruff):
+Install **emmet-language-server** - modern HTML/CSS expansion with JSX/TSX support:
 ```bash
-# Using uv (recommended)
-uv tool install ty
+# npm
+npm install -g emmet-language-server
 
-# Using pip
-pip install ty
+# pnpm
+pnpm install -g emmet-language-server
+
+# bun
+bun add -g emmet-language-server
 ```
 
-**Performance**: 26x faster than pyright (0.5s vs 13.6s on 100k LOC). Written in Rust for optimal speed.
+**Features**: Emmet abbreviation expansion for HTML, CSS, SCSS, SASS, Less, JSX, TSX, Vue, and Svelte. Essential for frontend development.
 
-The `ty` executable needs to be in your PATH.
+The `emmet-language-server` executable needs to be in your PATH.
+
+</details>
+
+<details>
+<summary>Astro (<code>astro-language-server</code>)</summary>
+
+Install **@astrojs/language-server** - official Astro language server:
+```bash
+# npm (with TypeScript and Prettier)
+npm install -g typescript prettier prettier-plugin-astro @astrojs/language-server
+
+# pnpm
+pnpm install -g typescript prettier prettier-plugin-astro @astrojs/language-server
+
+# bun
+bun add -g typescript prettier prettier-plugin-astro @astrojs/language-server
+```
+
+**Features**: Full IDE support for .astro files including diagnostics, autocomplete, formatting, and code navigation.
+
+The `astro-ls` executable needs to be in your PATH.
+
+</details>
+
+<details>
+<summary>Svelte (<code>svelte-language-server</code>)</summary>
+
+Install **svelte-language-server** - official Svelte language server:
+```bash
+# npm
+npm install -g svelte-language-server
+
+# pnpm
+pnpm install -g svelte-language-server
+
+# bun
+bun add -g svelte-language-server
+```
+
+**Features**: Full language server support for .svelte files including diagnostics, autocomplete, hover, and formatting.
+
+The `svelteserver` executable needs to be in your PATH.
+
+</details>
+
+<details>
+<summary>TailwindCSS (<code>tailwindcss-language-server</code>)</summary>
+
+Install **@tailwindcss/language-server** - official Tailwind IntelliSense:
+```bash
+# npm
+npm install -g @tailwindcss/language-server
+
+# pnpm
+pnpm install -g @tailwindcss/language-server
+
+# bun
+bun add -g @tailwindcss/language-server
+
+# Or via Homebrew
+brew install tailwindcss-language-server
+```
+
+**Features**: Class autocomplete, linting, and hover previews for Tailwind CSS. Works with HTML, JSX, TSX, Vue, Svelte, and Astro files. Requires `tailwind.config.js` in your workspace.
+
+The `tailwindcss-language-server` executable needs to be in your PATH.
 
 </details>
 
@@ -333,25 +465,6 @@ cargo install --features lsp --locked taplo-cli
 **Performance**: Rust-based for minimal memory usage and fast parsing. Excellent for Cargo.toml and other TOML configs.
 
 The `taplo` executable needs to be in your PATH.
-
-</details>
-
-<details>
-<summary>JSON (<code>vscode-json-languageserver</code>)</summary>
-
-Install **vscode-langservers-extracted** which includes the JSON language server:
-```bash
-# npm
-npm install -g vscode-langservers-extracted
-
-# pnpm
-pnpm install -g vscode-langservers-extracted
-
-# bun
-bun add -g vscode-langservers-extracted
-```
-
-Provides IntelliSense, validation, and schema support for JSON and JSONC files.
 
 </details>
 

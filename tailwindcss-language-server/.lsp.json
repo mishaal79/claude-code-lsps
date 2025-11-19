@@ -1,0 +1,18 @@
+{
+    "tailwindcss": {
+        "command": "tailwindcss-language-server",
+        "args": ["--stdio"],
+        "extensionToLanguage": {
+            ".html": "html",
+            ".jsx": "javascriptreact",
+            ".tsx": "typescriptreact",
+            ".vue": "vue",
+            ".svelte": "svelte",
+            ".astro": "astro"
+        },
+        "transport": "stdio",
+        "initializationOptions": {},
+        "settings": {},
+        "maxRestarts": 3
+    }
+}
