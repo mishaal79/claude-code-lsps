@@ -178,24 +178,6 @@
       }
     },
     {
-      "name": "basedpyright",
-      "version": "0.1.0",
-      "source": "./basedpyright",
-      "description": "Enhanced Python type checker and language server - a fork of pyright with additional features",
-      "category": "development",
-      "tags": [
-        "python",
-        "lsp",
-        "language-server",
-        "type-checking",
-        "basedpyright"
-      ],
-      "author": {
-        "name": "Piebald LLC",
-        "email": "support@piebald.ai"
-      }
-    },
-    {
       "name": "ty",
       "version": "0.1.0",
       "source": "./ty",
@@ -268,16 +250,17 @@
       }
     },
     {
-      "name": "marksman",
+      "name": "markdown-oxide",
       "version": "0.1.0",
-      "source": "./marksman",
-      "description": "Language server for Markdown with wiki-linking, references, and smart navigation",
+      "source": "./markdown-oxide",
+      "description": "Blazing fast Rust-based PKM Markdown Language Server with backlinks and references",
       "category": "development",
       "tags": [
         "markdown",
         "lsp",
         "language-server",
-        "documentation"
+        "rust",
+        "pkm"
       ],
       "author": {
         "name": "Piebald LLC",
@@ -329,6 +312,28 @@
         "lsp",
         "language-server",
         "vscode"
+      ],
+      "author": {
+        "name": "Piebald LLC",
+        "email": "support@piebald.ai"
+      }
+    },
+    {
+      "name": "biome",
+      "version": "0.1.0",
+      "source": "./biome",
+      "description": "Lightning-fast Rust-based unified toolchain for JavaScript, TypeScript, JSON, and CSS",
+      "category": "development",
+      "tags": [
+        "javascript",
+        "typescript",
+        "json",
+        "css",
+        "lsp",
+        "language-server",
+        "rust",
+        "formatter",
+        "linter"
       ],
       "author": {
         "name": "Piebald LLC",

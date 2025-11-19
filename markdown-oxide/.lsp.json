@@ -1,11 +1,13 @@
 {
     "markdown": {
-        "command": "marksman",
-        "args": ["server"],
+        "command": "markdown-oxide",
+        "args": [],
         "extensionToLanguage": {
             ".md": "markdown",
             ".markdown": "markdown",
-            ".mdx": "markdown"
+            ".mdown": "markdown",
+            ".mkdn": "markdown",
+            ".mkd": "markdown"
         },
         "transport": "stdio",
         "initializationOptions": {},

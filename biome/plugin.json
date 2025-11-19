@@ -1,0 +1,12 @@
+{
+  "name": "biome",
+  "version": "0.1.0",
+  "description": "Biome: Lightning-fast Rust-based unified toolchain for JavaScript, TypeScript, JSON, and CSS (formatter + linter + LSP)",
+  "author": {
+    "name": "Piebald LLC",
+    "email": "support@piebald.ai"
+  },
+  "repository": "https://github.com/biomejs/biome",
+  "license": "MIT",
+  "keywords": ["biome", "formatter", "linter", "javascript", "typescript", "json", "css", "rust", "lsp", "language-server"]
+}

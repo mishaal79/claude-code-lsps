@@ -1,0 +1,12 @@
+{
+  "name": "markdown-oxide",
+  "version": "0.1.0",
+  "description": "Blazing fast Rust-based PKM Markdown Language Server with backlinks, references, and daily notes",
+  "author": {
+    "name": "Piebald LLC",
+    "email": "support@piebald.ai"
+  },
+  "repository": "https://github.com/Feel-ix-343/markdown-oxide",
+  "license": "Apache-2.0",
+  "keywords": ["markdown", "lsp", "language-server", "rust", "pkm", "knowledge-management", "backlinks", "references"]
+}

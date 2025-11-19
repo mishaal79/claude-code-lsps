@@ -1,6 +1,8 @@
 # Claude Code LSPs
 
-This repository contains a [Claude Code marketplace](https://code.claude.com/docs/en/plugin-marketplaces) with plugins that offer LSP servers for TypeScript, Rust, Python, Go, Java, C/C++, PHP, Ruby, C#, and HTML/CSS.  [LSP servers](https://microsoft.github.io/language-server-protocol) provide powerful and familiar code intelligence features to IDEs, and now Claude Code directly.
+This repository contains a [Claude Code marketplace](https://code.claude.com/docs/en/plugin-marketplaces) with plugins that offer **performance-optimized LSP servers** for TypeScript, Rust, Python, Go, Java, C/C++, PHP, Ruby, C#, HTML/CSS, Shell, Terraform, Markdown, YAML, TOML, and JSON. [LSP servers](https://microsoft.github.io/language-server-protocol) provide powerful and familiar code intelligence features to IDEs, and now Claude Code directly.
+
+**⚡ Performance Focus**: This marketplace prioritizes **Rust** and **Go** based LSP servers for maximum speed and minimal memory usage. Rust/Go implementations are typically 3-100x faster than TypeScript/Node.js alternatives.
 
 [**Claude Code is going to officially support LSP soon.**](https://www.reddit.com/r/ClaudeAI/comments/1otdfo9/lsp_is_coming_to_claude_code_and_you_can_try_it)  In 2.0.30 (October 31st) they adding the working beginnings of a system to run LSP servers from plugins automatically on startup, and an `LSP` tool (enable via `$ENABLE_LSP_TOOL=1`) that Claude can use to
 - Go to the definition for symbols (`goToDefinition`)
@@ -210,26 +212,7 @@ This provides `vscode-html-language-server` and `vscode-css-language-server` exe
 </details>
 
 <details>
-<summary>Python - basedpyright (<code>basedpyright</code>)</summary>
-
-Install **basedpyright** - an enhanced fork of pyright with additional features:
-```bash
-# Using pip
-pip install basedpyright
-
-# Using pipx (recommended for global CLI tools)
-pipx install basedpyright
-
-# Using uv
-uv tool install basedpyright
-```
-
-The `basedpyright-langserver` executable needs to be in your PATH.
-
-</details>
-
-<details>
-<summary>Python - ty (<code>ty</code>)</summary>
+<summary>Python - ty (<code>ty</code>) ⚡ RUST</summary>
 
 Install **ty** - extremely fast Python type checker by Astral (creators of Ruff):
 ```bash
@@ -240,12 +223,14 @@ uv tool install ty
 pip install ty
 ```
 
+**Performance**: 26x faster than pyright (0.5s vs 13.6s on 100k LOC). Written in Rust for optimal speed.
+
 The `ty` executable needs to be in your PATH.
 
 </details>
 
 <details>
-<summary>JavaScript/TypeScript - oxc (<code>oxc-language-server</code>)</summary>
+<summary>JavaScript/TypeScript - oxc (<code>oxc-language-server</code>) ⚡ RUST</summary>
 
 Install **oxlint** package which includes the oxc language server:
 ```bash
@@ -255,6 +240,8 @@ npm install -g oxlint
 # Or use npx without installation
 npx --yes oxlint
 ```
+
+**Performance**: 50-100x faster than ESLint, 3x faster than SWC. Only 11.5MB memory footprint. Written in Rust.
 
 The plugin uses `npx` to run `oxc_language_server` from the oxlint package automatically.
 
@@ -280,7 +267,7 @@ Supports `.sh`, `.bash`, and `.zsh` files.
 </details>
 
 <details>
-<summary>Terraform (<code>terraform-ls</code>)</summary>
+<summary>Terraform (<code>terraform-ls</code>) ⚡ GO</summary>
 
 Install **terraform-ls** - official HashiCorp Terraform language server:
 ```bash
@@ -291,21 +278,25 @@ brew install hashicorp/tap/terraform-ls
 # https://releases.hashicorp.com/terraform-ls/
 ```
 
+**Performance**: 99% reduction in memory usage (v0.34+). Ensure you have the latest version for optimal performance.
+
 The `terraform-ls` executable needs to be in your PATH.
 
 </details>
 
 <details>
-<summary>Markdown (<code>marksman</code>)</summary>
+<summary>Markdown (<code>markdown-oxide</code>) ⚡ RUST</summary>
 
-Install **marksman** - language server for Markdown with wiki-linking:
+Install **markdown-oxide** - blazing fast Rust-based PKM Markdown language server:
 ```bash
-# macOS/Linux (Homebrew)
-brew install marksman
+# Using cargo
+cargo install --locked --git https://github.com/Feel-ix-343/markdown-oxide.git markdown-oxide
 
-# Or download binary from releases
-# https://github.com/artempyanykh/marksman/releases
+# Or using cargo-binstall (faster, downloads pre-built binary)
+cargo binstall --git 'https://github.com/feel-ix-343/markdown-oxide' markdown-oxide
 ```
+
+**Features**: PKM (Personal Knowledge Management) with backlinks, references, daily notes, and cross-file linking. Lighter and faster than marksman.
 
 Supports `.md`, `.markdown`, and `.mdx` files.
 
@@ -331,13 +322,15 @@ Provides validation, auto-completion, and schema support for YAML files.
 </details>
 
 <details>
-<summary>TOML (<code>taplo</code>)</summary>
+<summary>TOML (<code>taplo</code>) ⚡ RUST</summary>
 
 Install **taplo** - TOML language server:
 ```bash
 # Using cargo (requires --features lsp flag)
 cargo install --features lsp --locked taplo-cli
 ```
+
+**Performance**: Rust-based for minimal memory usage and fast parsing. Excellent for Cargo.toml and other TOML configs.
 
 The `taplo` executable needs to be in your PATH.
 
@@ -359,5 +352,26 @@ bun add -g vscode-langservers-extracted
 ```
 
 Provides IntelliSense, validation, and schema support for JSON and JSONC files.
+
+</details>
+
+<details>
+<summary>JavaScript/TypeScript/JSON/CSS - biome (<code>biome</code>) ⚡ RUST</summary>
+
+Install **biome** - lightning-fast Rust-based unified toolchain:
+```bash
+# npm
+npm install -g @biomejs/biome
+
+# pnpm
+pnpm install -g @biomejs/biome
+
+# bun
+bun add -g @biomejs/biome
+```
+
+**Performance**: Extremely fast Rust implementation. Unified formatter, linter, and LSP for JavaScript, TypeScript, JSON, and CSS.
+
+Provides a single tool for multiple languages with exceptional performance.
 
 </details>
