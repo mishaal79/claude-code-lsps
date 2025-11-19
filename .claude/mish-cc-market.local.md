@@ -20,7 +20,7 @@ This is a Claude Code marketplace providing performance-optimized Language Serve
 ## Marketplace Installation
 
 ```bash
-/plugin marketplace add mish-cc-market
+/plugin marketplace add mishaal79/mish-claude-code-lsps
 ```
 
 ## Development Workflow

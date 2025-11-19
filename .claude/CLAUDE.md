@@ -30,9 +30,6 @@ Users add this marketplace to Claude Code:
 ```bash
 # In Claude Code CLI
 /plugin marketplace add mishaal79/mish-claude-code-lsps
-
-# Or using shortened name (if configured)
-/plugin marketplace add mish-cc-market
 ```
 
 This reads `.claude-plugin/marketplace.json` and makes all 24 plugins discoverable.

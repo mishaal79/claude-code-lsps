@@ -26,7 +26,7 @@ If you'd like to apply the patches yourself, go the bottom of this page.
 
 Install them the usual way.  First make CC aware of the marketplace:
 1. Run `claude`
-2. `/plugin marketplace add mish-cc-market`
+2. `/plugin marketplace add mishaal79/mish-claude-code-lsps`
 
 Then enable the plugins of your choice:
 1. Run `claude`
@@ -41,6 +41,16 @@ Here's a screenshot:
 
 <img width="603" height="374" alt="image" src="https://github.com/user-attachments/assets/207ebb79-8c45-446b-9c08-eb81d235c301" />
 
+
+## Validation
+
+Before committing changes, validate JSON files:
+
+```bash
+./pre-commit-validate.sh
+```
+
+See [README-VALIDATION.md](README-VALIDATION.md) for details.
 
 ## Language-specific setup instructions
 

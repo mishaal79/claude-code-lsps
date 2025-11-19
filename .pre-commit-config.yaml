@@ -1,0 +1,55 @@
+# Pre-commit hooks for mish-cc-market
+# Install: pip install pre-commit (or pipx install pre-commit)
+# Setup: pre-commit install
+# Run manually: pre-commit run --all-files
+
+repos:
+  - repo: local
+    hooks:
+      # Validate all JSON files using jq
+      - id: validate-json
+        name: Validate JSON syntax
+        entry: bash -c 'for file in "$@"; do jq empty "$file" || exit 1; done' --
+        language: system
+        files: \.json$
+        pass_filenames: true
+
+      # Validate marketplace.json structure
+      - id: validate-marketplace
+        name: Validate marketplace.json structure
+        entry: bash -c 'jq -e ".name and .owner and .metadata and .plugins" .claude-plugin/marketplace.json > /dev/null'
+        language: system
+        files: ^\.claude-plugin/marketplace\.json$
+        pass_filenames: false
+
+      # Validate plugin.json files have required fields
+      - id: validate-plugin-json
+        name: Validate plugin.json files
+        entry: bash -c 'for file in "$@"; do jq -e ".name and .version and .description and .author and .repository and .license and .keywords" "$file" > /dev/null || exit 1; done' --
+        language: system
+        files: plugin\.json$
+        pass_filenames: true
+
+      # Validate .lsp.json files have required fields
+      - id: validate-lsp-json
+        name: Validate .lsp.json files
+        entry: bash -c 'for file in "$@"; do jq -e ".[].command and .[].args and .[].extensionToLanguage and .[].transport and .[].maxRestarts" "$file" > /dev/null || exit 1; done' --
+        language: system
+        files: \.lsp\.json$
+        pass_filenames: true
+
+      # Check that marketplace.json plugins match actual directories
+      - id: check-marketplace-plugins
+        name: Check marketplace plugins exist
+        entry: bash -c 'jq -r ".plugins[].source" .claude-plugin/marketplace.json | while read source; do dir="${source#./}"; if [ ! -d "$dir" ]; then echo "Missing plugin directory: $dir"; exit 1; fi; done'
+        language: system
+        files: ^\.claude-plugin/marketplace\.json$
+        pass_filenames: false
+
+      # Ensure plugin directories have both required files
+      - id: check-plugin-files
+        name: Check plugin files exist
+        entry: bash -c 'for dir in */; do if [ -f "${dir}plugin.json" ]; then if [ ! -f "${dir}.lsp.json" ]; then echo "Missing .lsp.json in ${dir}"; exit 1; fi; fi; done'
+        language: system
+        always_run: true
+        pass_filenames: false
