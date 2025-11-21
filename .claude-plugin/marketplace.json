@@ -10,18 +10,6 @@
   },
   "plugins": [
     {
-      "name": "python",
-      "version": "0.1.0",
-      "source": "./python",
-      "description": "Default Python LSP - ty by Astral, extremely fast Rust-based type checker (26x faster than pyright)",
-      "category": "development",
-      "tags": ["python", "lsp", "language-server", "type-checking", "rust", "astral", "ty", "default"],
-      "author": {
-        "name": "Mishal",
-        "email": "mishal@qrius.global"
-      }
-    },
-    {
       "name": "ty",
       "version": "0.1.0",
       "source": "./ty",
