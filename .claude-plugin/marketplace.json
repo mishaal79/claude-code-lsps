@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Performance-optimized LSP servers for Claude Code with focus on Rust/Go implementations",
-    "version": "2.0.0"
+    "version": "2.1.0"
   },
   "plugins": [
     {

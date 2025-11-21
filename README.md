@@ -1,5 +1,9 @@
 # mish-cc-market
 
+![Version](https://img.shields.io/badge/version-2.1.0-blue.svg)
+![Plugins](https://img.shields.io/badge/plugins-25-green.svg)
+![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)
+
 This repository contains a [Claude Code marketplace](https://code.claude.com/docs/en/plugin-marketplaces) with plugins that offer **performance-optimized LSP servers** for TypeScript, Rust, Python, Go, Java, C/C++, PHP, Ruby, C#, HTML, CSS, Astro, Svelte, TailwindCSS, Shell, Terraform, Markdown, YAML, TOML, and JSON. [LSP servers](https://microsoft.github.io/language-server-protocol) provide powerful and familiar code intelligence features to IDEs, and now Claude Code directly.
 
 **⚡ Performance Focus**: This marketplace prioritizes **Rust** and **Go** based LSP servers for maximum speed and minimal memory usage. Rust/Go implementations are typically 3-100x faster than TypeScript/Node.js alternatives.
