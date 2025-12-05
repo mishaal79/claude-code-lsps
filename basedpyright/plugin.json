@@ -8,5 +8,12 @@
   },
   "repository": "https://github.com/DetachHead/basedpyright",
   "license": "MIT",
-  "keywords": ["python", "lsp", "language-server", "type-checking", "pylance"]
+  "keywords": [
+    "python",
+    "lsp",
+    "language-server",
+    "type-checking",
+    "pylance"
+  ],
+  "lspServers": "./.lsp.json"
 }

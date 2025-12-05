@@ -8,5 +8,12 @@
   },
   "repository": "https://github.com/tamasfe/taplo",
   "license": "MIT",
-  "keywords": ["toml", "lsp", "language-server", "taplo", "configuration"]
+  "keywords": [
+    "toml",
+    "lsp",
+    "language-server",
+    "taplo",
+    "configuration"
+  ],
+  "lspServers": "./.lsp.json"
 }

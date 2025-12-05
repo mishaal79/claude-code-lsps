@@ -8,5 +8,12 @@
   },
   "repository": "https://github.com/OmniSharp/omnisharp-roslyn",
   "license": "MIT",
-  "keywords": ["csharp", "c#", "dotnet", "lsp", "language-server"]
+  "keywords": [
+    "csharp",
+    "c#",
+    "dotnet",
+    "lsp",
+    "language-server"
+  ],
+  "lspServers": "./.lsp.json"
 }

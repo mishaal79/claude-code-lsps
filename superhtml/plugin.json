@@ -8,5 +8,13 @@
   },
   "repository": "https://github.com/kristoff-it/superhtml",
   "license": "MIT",
-  "keywords": ["html", "lsp", "language-server", "validator", "formatter", "zig"]
+  "keywords": [
+    "html",
+    "lsp",
+    "language-server",
+    "validator",
+    "formatter",
+    "zig"
+  ],
+  "lspServers": "./.lsp.json"
 }

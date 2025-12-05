@@ -8,5 +8,13 @@
   },
   "repository": "https://github.com/redhat-developer/yaml-language-server",
   "license": "MIT",
-  "keywords": ["yaml", "yml", "lsp", "language-server", "kubernetes", "configuration"]
+  "keywords": [
+    "yaml",
+    "yml",
+    "lsp",
+    "language-server",
+    "kubernetes",
+    "configuration"
+  ],
+  "lspServers": "./.lsp.json"
 }

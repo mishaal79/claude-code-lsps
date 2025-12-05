@@ -8,5 +8,6 @@
   },
   "repository": "https://github.com/yioneko/vtsls",
   "license": "Apache-2.0 and MIT",
-  "keywords": ["typescript", "javascript", "lsp", "language-server", "vtsls"]
+  "keywords": ["typescript", "javascript", "lsp", "language-server", "vtsls"],
+  "lspServers": "./.lsp.json"
 }

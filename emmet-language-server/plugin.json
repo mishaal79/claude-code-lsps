@@ -8,5 +8,15 @@
   },
   "repository": "https://github.com/olrtg/emmet-language-server",
   "license": "MIT",
-  "keywords": ["emmet", "html", "css", "lsp", "language-server", "jsx", "tsx", "expansion"]
+  "keywords": [
+    "emmet",
+    "html",
+    "css",
+    "lsp",
+    "language-server",
+    "jsx",
+    "tsx",
+    "expansion"
+  ],
+  "lspServers": "./.lsp.json"
 }

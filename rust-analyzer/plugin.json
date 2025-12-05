@@ -12,5 +12,6 @@
     "rust",
     "lsp",
     "language-server"
-  ]
+  ],
+  "lspServers": "./.lsp.json"
 }

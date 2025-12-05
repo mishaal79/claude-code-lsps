@@ -8,5 +8,13 @@
   },
   "repository": "https://github.com/tailwindlabs/tailwindcss-intellisense",
   "license": "MIT",
-  "keywords": ["tailwind", "tailwindcss", "css", "lsp", "language-server", "intellisense"]
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "css",
+    "lsp",
+    "language-server",
+    "intellisense"
+  ],
+  "lspServers": "./.lsp.json"
 }

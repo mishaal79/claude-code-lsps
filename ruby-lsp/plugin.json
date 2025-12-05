@@ -8,5 +8,10 @@
   },
   "repository": "https://github.com/Shopify/ruby-lsp",
   "license": "MIT",
-  "keywords": ["ruby", "lsp", "language-server"]
+  "keywords": [
+    "ruby",
+    "lsp",
+    "language-server"
+  ],
+  "lspServers": "./.lsp.json"
 }

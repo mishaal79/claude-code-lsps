@@ -8,5 +8,12 @@
   },
   "repository": "https://github.com/withastro/language-tools",
   "license": "MIT",
-  "keywords": ["astro", "lsp", "language-server", "jsx", "tsx"]
+  "keywords": [
+    "astro",
+    "lsp",
+    "language-server",
+    "jsx",
+    "tsx"
+  ],
+  "lspServers": "./.lsp.json"
 }

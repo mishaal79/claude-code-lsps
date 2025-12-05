@@ -8,5 +8,10 @@
   },
   "repository": "https://github.com/phpactor/phpactor",
   "license": "MIT",
-  "keywords": ["php", "lsp", "language-server"]
+  "keywords": [
+    "php",
+    "lsp",
+    "language-server"
+  ],
+  "lspServers": "./.lsp.json"
 }

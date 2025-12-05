@@ -8,5 +8,14 @@
   },
   "repository": "https://github.com/facebook/pyrefly",
   "license": "MIT",
-  "keywords": ["python", "lsp", "language-server", "type-checking", "rust", "meta", "performance"]
+  "keywords": [
+    "python",
+    "lsp",
+    "language-server",
+    "type-checking",
+    "rust",
+    "meta",
+    "performance"
+  ],
+  "lspServers": "./.lsp.json"
 }

@@ -8,5 +8,10 @@
   },
   "repository": "https://github.com/sveltejs/language-tools",
   "license": "MIT",
-  "keywords": ["svelte", "lsp", "language-server"]
+  "keywords": [
+    "svelte",
+    "lsp",
+    "language-server"
+  ],
+  "lspServers": "./.lsp.json"
 }

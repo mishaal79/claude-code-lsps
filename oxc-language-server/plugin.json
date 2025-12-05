@@ -8,5 +8,15 @@
   },
   "repository": "https://github.com/oxc-project/oxc",
   "license": "MIT",
-  "keywords": ["oxc", "oxlint", "javascript", "typescript", "lsp", "language-server", "rust", "linter"]
+  "keywords": [
+    "oxc",
+    "oxlint",
+    "javascript",
+    "typescript",
+    "lsp",
+    "language-server",
+    "rust",
+    "linter"
+  ],
+  "lspServers": "./.lsp.json"
 }

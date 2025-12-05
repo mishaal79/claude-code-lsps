@@ -8,5 +8,17 @@
   },
   "repository": "https://github.com/biomejs/biome",
   "license": "MIT",
-  "keywords": ["biome", "formatter", "linter", "javascript", "typescript", "json", "css", "rust", "lsp", "language-server"]
+  "keywords": [
+    "biome",
+    "formatter",
+    "linter",
+    "javascript",
+    "typescript",
+    "json",
+    "css",
+    "rust",
+    "lsp",
+    "language-server"
+  ],
+  "lspServers": "./.lsp.json"
 }

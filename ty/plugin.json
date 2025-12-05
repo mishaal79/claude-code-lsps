@@ -8,5 +8,14 @@
   },
   "repository": "https://github.com/astral-sh/ty",
   "license": "MIT",
-  "keywords": ["python", "lsp", "language-server", "type-checking", "rust", "astral", "ty"]
+  "keywords": [
+    "python",
+    "lsp",
+    "language-server",
+    "type-checking",
+    "rust",
+    "astral",
+    "ty"
+  ],
+  "lspServers": "./.lsp.json"
 }

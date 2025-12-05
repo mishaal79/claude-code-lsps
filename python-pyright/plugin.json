@@ -8,5 +8,13 @@
   },
   "repository": "https://github.com/microsoft/pyright",
   "license": "MIT",
-  "keywords": ["python", "lsp", "language-server", "type-checking", "pyright", "alternative"]
+  "keywords": [
+    "python",
+    "lsp",
+    "language-server",
+    "type-checking",
+    "pyright",
+    "alternative"
+  ],
+  "lspServers": "./.lsp.json"
 }

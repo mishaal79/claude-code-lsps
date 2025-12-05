@@ -8,5 +8,15 @@
   },
   "repository": "https://github.com/Feel-ix-343/markdown-oxide",
   "license": "Apache-2.0",
-  "keywords": ["markdown", "lsp", "language-server", "rust", "pkm", "knowledge-management", "backlinks", "references"]
+  "keywords": [
+    "markdown",
+    "lsp",
+    "language-server",
+    "rust",
+    "pkm",
+    "knowledge-management",
+    "backlinks",
+    "references"
+  ],
+  "lspServers": "./.lsp.json"
 }

@@ -8,5 +8,13 @@
   },
   "repository": "https://github.com/bash-lsp/bash-language-server",
   "license": "MIT",
-  "keywords": ["bash", "shell", "sh", "zsh", "language-server", "lsp"]
+  "keywords": [
+    "bash",
+    "shell",
+    "sh",
+    "zsh",
+    "language-server",
+    "lsp"
+  ],
+  "lspServers": "./.lsp.json"
 }
