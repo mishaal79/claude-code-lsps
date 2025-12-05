@@ -2,8 +2,9 @@
   "svelte": {
     "command": "svelteserver",
     "args": ["--stdio"],
-    "languages": ["svelte"],
-    "fileExtensions": [".svelte"],
+    "extensionToLanguage": {
+      ".svelte": "svelte"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3

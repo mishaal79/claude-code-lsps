@@ -2,8 +2,15 @@
   "cpp": {
     "command": "clangd",
     "args": [],
-    "languages": ["c", "cpp"],
-    "fileExtensions": [".c", ".cpp", ".cc", ".cxx", ".h", ".hpp", ".hxx"],
+    "extensionToLanguage": {
+      ".c": "c",
+      ".cpp": "cpp",
+      ".cc": "cpp",
+      ".cxx": "cpp",
+      ".h": "c",
+      ".hpp": "cpp",
+      ".hxx": "cpp"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3

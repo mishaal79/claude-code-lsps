@@ -2,8 +2,17 @@
   "emmet": {
     "command": "emmet-language-server",
     "args": ["--stdio"],
-    "languages": ["html", "css", "scss", "sass", "less", "javascriptreact", "typescriptreact", "vue", "svelte"],
-    "fileExtensions": [".html", ".css", ".scss", ".sass", ".less", ".jsx", ".tsx", ".vue", ".svelte"],
+    "extensionToLanguage": {
+      ".html": "html",
+      ".css": "css",
+      ".scss": "scss",
+      ".sass": "sass",
+      ".less": "less",
+      ".jsx": "javascriptreact",
+      ".tsx": "typescriptreact",
+      ".vue": "vue",
+      ".svelte": "svelte"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3

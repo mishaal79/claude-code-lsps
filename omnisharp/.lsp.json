@@ -2,8 +2,10 @@
   "csharp": {
     "command": "OmniSharp",
     "args": ["--languageserver"],
-    "languages": ["csharp"],
-    "fileExtensions": [".cs", ".csx"],
+    "extensionToLanguage": {
+      ".cs": "csharp",
+      ".csx": "csharp"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3

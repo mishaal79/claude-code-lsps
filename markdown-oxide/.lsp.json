@@ -2,8 +2,11 @@
   "markdown": {
     "command": "markdown-oxide",
     "args": [],
-    "languages": ["markdown"],
-    "fileExtensions": [".md", ".markdown", ".mdx"],
+    "extensionToLanguage": {
+      ".md": "markdown",
+      ".markdown": "markdown",
+      ".mdx": "mdx"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3

@@ -2,8 +2,9 @@
   "go": {
     "command": "gopls",
     "args": [],
-    "languages": ["go"],
-    "fileExtensions": [".go"],
+    "extensionToLanguage": {
+      ".go": "go"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3

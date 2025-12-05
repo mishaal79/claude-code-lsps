@@ -2,8 +2,9 @@
   "astro": {
     "command": "astro-ls",
     "args": ["--stdio"],
-    "languages": ["astro"],
-    "fileExtensions": [".astro"],
+    "extensionToLanguage": {
+      ".astro": "astro"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3

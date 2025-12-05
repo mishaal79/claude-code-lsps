@@ -2,8 +2,11 @@
   "bash": {
     "command": "bash-language-server",
     "args": ["start"],
-    "languages": ["sh", "bash"],
-    "fileExtensions": [".sh", ".bash", ".zsh"],
+    "extensionToLanguage": {
+      ".sh": "shellscript",
+      ".bash": "shellscript",
+      ".zsh": "shellscript"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3

@@ -2,8 +2,11 @@
   "terraform": {
     "command": "terraform-ls",
     "args": ["serve"],
-    "languages": ["terraform", "hcl"],
-    "fileExtensions": [".tf", ".tfvars", ".hcl"],
+    "extensionToLanguage": {
+      ".tf": "terraform",
+      ".tfvars": "terraform",
+      ".hcl": "hcl"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3

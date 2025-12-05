@@ -2,8 +2,15 @@
   "tailwindcss": {
     "command": "tailwindcss-language-server",
     "args": ["--stdio"],
-    "languages": ["html", "css", "javascriptreact", "typescriptreact", "vue", "svelte", "astro"],
-    "fileExtensions": [".html", ".css", ".jsx", ".tsx", ".vue", ".svelte", ".astro"],
+    "extensionToLanguage": {
+      ".html": "html",
+      ".css": "css",
+      ".jsx": "javascriptreact",
+      ".tsx": "typescriptreact",
+      ".vue": "vue",
+      ".svelte": "svelte",
+      ".astro": "astro"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3

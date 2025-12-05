@@ -2,22 +2,19 @@
   "typescript": {
     "command": "vtsls",
     "args": ["--stdio"],
-    "languages": [
-      "typescript",
-      "javascript",
-      "typescriptreact",
-      "javascriptreact",
-      "vue",
-      "svelte",
-      "astro"
-    ],
-    "fileExtensions": [
-      ".ts", ".tsx", ".mts", ".cts",
-      ".js", ".jsx", ".mjs", ".cjs",
-      ".vue",
-      ".svelte",
-      ".astro"
-    ],
+    "extensionToLanguage": {
+      ".ts": "typescript",
+      ".tsx": "typescriptreact",
+      ".mts": "typescript",
+      ".cts": "typescript",
+      ".js": "javascript",
+      ".jsx": "javascriptreact",
+      ".mjs": "javascript",
+      ".cjs": "javascript",
+      ".vue": "vue",
+      ".svelte": "svelte",
+      ".astro": "astro"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3

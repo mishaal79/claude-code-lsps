@@ -2,8 +2,16 @@
   "biome": {
     "command": "biome",
     "args": ["lsp-proxy"],
-    "languages": ["javascript", "typescript", "javascriptreact", "typescriptreact", "json", "jsonc"],
-    "fileExtensions": [".js", ".jsx", ".mjs", ".cjs", ".ts", ".tsx", ".json", ".jsonc"],
+    "extensionToLanguage": {
+      ".js": "javascript",
+      ".jsx": "javascriptreact",
+      ".mjs": "javascript",
+      ".cjs": "javascript",
+      ".ts": "typescript",
+      ".tsx": "typescriptreact",
+      ".json": "json",
+      ".jsonc": "jsonc"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3

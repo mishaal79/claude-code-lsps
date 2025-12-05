@@ -2,8 +2,10 @@
   "ruby": {
     "command": "ruby-lsp",
     "args": [],
-    "languages": ["ruby"],
-    "fileExtensions": [".rb", ".rake"],
+    "extensionToLanguage": {
+      ".rb": "ruby",
+      ".rake": "ruby"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3

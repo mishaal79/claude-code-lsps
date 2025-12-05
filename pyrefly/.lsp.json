@@ -2,8 +2,11 @@
   "python": {
     "command": "uvx",
     "args": ["--from", "pyrefly", "pyrefly"],
-    "languages": ["python"],
-    "fileExtensions": [".py", ".pyi", ".pyw"],
+    "extensionToLanguage": {
+      ".py": "python",
+      ".pyi": "python",
+      ".pyw": "python"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3

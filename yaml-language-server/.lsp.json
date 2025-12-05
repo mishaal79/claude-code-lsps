@@ -2,8 +2,10 @@
   "yaml": {
     "command": "yaml-language-server",
     "args": ["--stdio"],
-    "languages": ["yaml"],
-    "fileExtensions": [".yaml", ".yml"],
+    "extensionToLanguage": {
+      ".yaml": "yaml",
+      ".yml": "yaml"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3

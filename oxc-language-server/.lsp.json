@@ -2,8 +2,14 @@
   "javascript": {
     "command": "npx",
     "args": ["--yes", "oxc_language_server"],
-    "languages": ["javascript", "typescript", "javascriptreact", "typescriptreact"],
-    "fileExtensions": [".js", ".jsx", ".mjs", ".cjs", ".ts", ".tsx"],
+    "extensionToLanguage": {
+      ".js": "javascript",
+      ".jsx": "javascriptreact",
+      ".mjs": "javascript",
+      ".cjs": "javascript",
+      ".ts": "typescript",
+      ".tsx": "typescriptreact"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3

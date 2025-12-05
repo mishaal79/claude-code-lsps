@@ -2,8 +2,9 @@
   "php": {
     "command": "phpactor",
     "args": ["language-server"],
-    "languages": ["php"],
-    "fileExtensions": [".php"],
+    "extensionToLanguage": {
+      ".php": "php"
+    },
     "transport": "stdio",
     "settings": {},
     "maxRestarts": 3
